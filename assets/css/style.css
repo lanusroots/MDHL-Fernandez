@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+}
+
+body{
+    width: 80%;
+    margin: auto;
+}
+
+h1{
+    font-size: 4vw;
+}
+
+header{
+    margin-top: 40px;
+}
+
+.banner{
+    background-image: url(../img/design1_image2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+nav{
+    position: relative;
+    top: -5%;
+    right: -80%;
+}
+
+nav a{
+    border: 1px solid #000000;
+    background-color: #4472C4;
+    box-shadow: 2px 2px 5px black ;
+    color: #FFFFFD;
+    font-size: small;
+    padding: 2px 10px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: #0b2655;
+    transition: 1s;
+}
+
+.active{
+    background-color: #70AD47;
+}
+
+img{
+    width: 150px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.efect1:hover{
+    transform: rotate(360deg);
+    transition: 1.2s;
+}
+
+.efect2:hover{
+    transform: scale(1.5);
+    transition: 1.2s;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.content-info{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+h2{
+    border: 2px solid black;
+    text-align: center; 
+}
+
+.info{
+    font-size: 14px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.title-info{
+    display: inline-block;
+    margin-top: 20px;
+    max-width: 75%;
+    vertical-align: top;
+}
+
+footer{
+    background-color: whitesmoke;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
