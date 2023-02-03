@@ -1,104 +1,240 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 
+/* ------ RESET / FORMAT ------ */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comic Neue', cursive;
 }
 
-body{
+/* ------ MAIN ------ */
+
+body {
     width: 80%;
     margin: auto;
+    overflow-x: hidden;
 }
 
-h1{
+h1 {
     font-size: 4vw;
 }
 
-header{
+header {
     margin-top: 40px;
 }
 
-.banner{
+.banner {
     background-image: url(../img/design1_image2.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
 }
 
-nav{
+nav {
     position: relative;
     top: -5%;
-    right: -80%;
+    right: -70%;
 }
 
-nav a{
+nav a {
     border: 1px solid #000000;
     background-color: #4472C4;
-    box-shadow: 2px 2px 5px black ;
+    box-shadow: 2px 2px 5px black;
     color: #FFFFFD;
     font-size: small;
     padding: 2px 10px;
     text-decoration: none;
 }
 
-nav a:hover{
-    background-color: #0b2655;
+nav a:hover {
+    background-color: #F8E12E;
+    color: #000000;
     transition: 1s;
 }
 
-.active{
+.active {
     background-color: #70AD47;
 }
 
-img{
+img {
     width: 150px;
     padding-bottom: 10px;
     display: block;
 }
 
-.efect1:hover{
+.efect1:hover {
     transform: rotate(360deg);
     transition: 1.2s;
 }
 
-.efect2:hover{
+.efect2:hover {
     transform: scale(1.5);
     transition: 1.2s;
 }
 
-.logo{
+.logo {
     display: inline-block;
+    /* padding: 10px; */
 }
 
-.content-info{
+.content-info {
+    /* display: inline-block; */
     padding-left: 20px;
     padding-top: 20px;
 }
 
-h2{
+h2 {
     border: 2px solid black;
-    text-align: center; 
+    text-align: center;
 }
 
-.info{
+p {
+    padding: 10px 0px;
+    text-align: justify;
+}
+
+.info {
     font-size: 14px;
     padding-left: 15px;
     padding-bottom: 10px;
 }
 
-.title-info{
+.title-info {
     display: inline-block;
     margin-top: 20px;
     max-width: 75%;
     vertical-align: top;
 }
 
-footer{
+.foot {
+    text-align: center;
+}
+
+footer {
     background-color: whitesmoke;
     margin-top: 50px;
     padding: 20px;
     text-align: center;
+}
+
+/* ------ Image slider ------ */
+
+.carrusel {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.carrusel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 510px;
+    scroll-behavior: smooth;
+}
+
+.carrusel-fotos {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+}
+
+.carrusel-fotos img {
+    background: black;
+    border: 4px solid black;
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.carrusel-fotos {
+    overflow: hidden;
+}
+
+.carrusel-menu {
+    display: block;
+}
+
+.carrusel-menu img {
+    box-sizing: border-box;
+    width: 50px;
+    height: 40px;
+    border: 10px solid black;
+}
+
+.carrusel-menu img:hover {
+    border: none;
+}
+
+/* ------ Table ------ */
+
+.align_right {
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+table {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+tr, th, td {
+    padding: 8px 16px;
+}
+
+th {
+    text-align: left;
+}
+
+.centered {
+    text-align: center;
+}
+
+p.gap {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------ List ------ */
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    text-indent: 20px;
+}
+
+ol li {
+    text-indent: 0px;
+    list-style-position: inside;
+}
+
+ul li {
+    text-indent: 0px;
+    list-style-position: inside;
+}
+
+ul {
+    margin-left: 30px;
+    list-style-type: circle;
+}
+
+.space_text {
+    margin: 20px 0px;
 }
